@@ -16,8 +16,18 @@ const { title } = Astro.props;
 		<title>{title}</title>
         <ClientRouter />
     </head>
-	<body>
+	<body class="tartan">
 		<Navbar title={title} transition:persist/>
-        <slot />
+        <div id="content">
+            <slot />
+        </div>
 	</body>
 </html>
+
+<style>
+    #content {
+        display: flex;
+        justify-content: center;
+        padding: var(--space-lg);
+    }
+</style>

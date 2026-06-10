@@ -10,4 +10,36 @@
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 200;
 }
+
+.tartan {
+    background-image:
+        repeating-linear-gradient(0deg, transparent 0 30px, rgba(130, 190, 66, 0.4) 30px 60px),
+        repeating-linear-gradient(90deg, transparent 0 30px, rgba(143, 187, 73, 0.4) 30px 60px);
+}
+
+.polka {
+background-image:  radial-gradient(#acdeff 6px, transparent 6px), radial-gradient(#ffaeff 6px, #ffffff 6px);
+background-size: 36px 36px;
+background-position: 0 0,18px 18px;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+
