@@ -1,0 +1,19 @@
+---
+const { title } = Astro.props
+---
+
+<nav>
+    <h2>
+        {title}
+    </h2>
+</nav>
+
+<style>
+    nav {
+        border-bottom: 1px solid black;
+        padding-inline: var(--space-xl);
+        padding-block: var(--space-sm);
+        flex: auto;
+        flex-direction: row;
+    }
+</style>
