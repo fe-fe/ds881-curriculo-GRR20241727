@@ -1,0 +1,16 @@
+---
+const { class: className } = Astro.props
+---
+
+<div class:list={["box", className]}>
+    <slot />
+</div>
+
+<style>
+    .box {
+        padding: var(--space-md);
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 2px;
+    }
+</style>
