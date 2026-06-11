@@ -45,7 +45,8 @@ jobs:
         uses: withastro/action@v3
         with:
           path: ui
-
+          node-version: 22   
+          
   deploy:
     needs: build
     if: github.ref == 'refs/heads/main'
